@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+  padding: 15px;
+}
+
+input {
+  padding: 5px;
+  margin: 10px;
+}
+
+table {
+  margin: auto;
+}
+
+table, thead, th, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 2%;
+}
+
+.form_display {
+  display: flex;
+  height: 100vh;
+}
+
+.enter_form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100vh;
+  margin: auto;
+  width: 50%;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.2em;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  font-size: 1.5em;
+  color: gray;
+  background: transparent;
+}
+
+::placeholder {
+  color: gainsboro;
+  font-weight: lighter;
+}

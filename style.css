@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+  padding: 15px;
+}
+
+input {
+  padding: 5px;
+  margin: 10px;
+}
+
+table {
+  margin: auto;
+  width: 60%;
+}
+
+table, thead, th, tr, td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-of-type(even) {
+  background: whitesmoke;
+}
+
+tr:nth-of-type(odd) {
+  background: ghostwhite;
+}
+
+thead tr:first-of-type {
+  background: whitesmoke;
+}
+
+.form_display {
+  display: flex;
+  height: 100vh;
+}
+
+.enter_form,
+.edit_form  {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100vh;
+  margin: auto;
+  width: 50%;
+}
+
+.form {
+  height: 100vh;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.2em;
+  border: none;
+  border-bottom: 2px solid grey;
+}
+
+input#valider {
+  padding: 10px;
+  font-size: 1.5em;
+  color: grey;
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid gray;
+}
+
+input#valider:active {
+  background: grey;
+  color: white;
+}
+
+::placeholder {
+  color: gainsboro;
+  font-weight: lighter;
+}
+
+nav {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  background: black;
+}
+
+nav ul li {
+  list-style: none;
+  height: 50vh;
+  padding: 50px 10px;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+button#delete {
+  background: transparent;
+  border: 2px solid red;
+  color: red;
+  padding: 5px;
+  font-weight: bold;
+}
+
+button#delete:active {
+  background: red;
+  color: white;
+}
+
+.tabler-btn {
+  background: transparent;
+  border: 2px solid darkgreen;
+  color: darkgreen;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.tabler-btn:active {
+  background: darkgreen;
+  color: white;
+}
