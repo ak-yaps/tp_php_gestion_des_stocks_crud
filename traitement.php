@@ -24,16 +24,14 @@ if ($_POST["action"] === "delete_prod"){
 
 
 function createProduits() {
-    global $db;
-
-    $sql = "INSERT INTO produits (nom, prix, description)
-    VALUES (:name, :prix, :description)";
-
-    $query = $db->prepare($sql);
-    $query->bindParam(":name", $_POST["name"], PDO::PARAM_STR);
-    $query->bindParam(":prix", $_POST["prix"], PDO::PARAM_INT);
-    $query->bindParam(":description", $_POST["description"], PDO::PARAM_STR);
-    header('Location: index.php');
+   global $db;
+   $sql = "INSERT INTO produits (nom, prix, description) VALUES (:name, :prix, :description)";
+   $query = $db->prepare($sql);
+   $query->bindParam(":name", $_POST["name"], PDO::PARAM_STR);
+   $query->bindParam(":prix", $_POST["prix"], PDO::PARAM_STR);
+   $query->bindParam(":description", $_POST["description"], PDO::PARAM_STR);
+   $res = $query->execute();
+   header('Location: index.php');
 }
 
 function updateproduits($id) {
