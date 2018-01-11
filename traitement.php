@@ -59,7 +59,17 @@ function deleteProduits($id){
 
 
 }
+function deleteUser() {
 
+    global $db;
+    foreach ($_POST["delete_user_id"] as $id) {
+        $sql = "DELETE FROM users WHERE id = $id";
+         $exec = $db->query($sql);
+         header("Location: index.php");
+         debug($id);
+    }
+
+}
 function getProd($id){
     global $db;
     $read = "SELECT * FROM produits WHERE id = :id";
